@@ -1551,8 +1551,8 @@
       <option name="movement" value="1"/>
       <option name="transportCost" value="4"/>
       <option name="isInfantry" value="true"/>
-      <option name="isParatroop" value="false"/>
-      <option name="isMechanized" value="false"/>
+      <option name="isAirTransportable" value="false"/>
+      <option name="isInfantry" value="false"/>
       <option name="attack" value="1"/>
       <option name="defense" value="2"/>
       <option name="artillerySupportable" value="true"/>
@@ -1563,8 +1563,8 @@
       <option name="movement" value="1"/>
       <option name="transportCost" value="4"/>
       <option name="isInfantry" value="true"/>
-      <option name="isParatroop" value="true"/>
-      <option name="isMechanized" value="false"/>
+      <option name="isAirTransportable" value="true"/>
+      <option name="isInfantry" value="false"/>
       <option name="isMarine" value="true"/>
       <option name="attack" value="1"/>
       <option name="defense" value="2"/>
@@ -1576,8 +1576,8 @@
       <option name="movement" value="1"/>
       <option name="transportCost" value="3"/>
       <option name="isInfantry" value="true"/>
-      <option name="isParatroop" value="false"/>
-      <option name="isMechanized" value="false"/>
+      <option name="isAirTransportable" value="false"/>
+      <option name="isInfantry" value="false"/>
       <option name="isMarine" value="false"/>
       <option name="attack" value="2"/>
       <option name="defense" value="1"/>
@@ -1605,8 +1605,8 @@
       <option name="movement" value="2"/>
       <option name="transportCost" value="5"/>
       <option name="isInfantry" value="false"/>
-      <option name="isParatroop" value="false"/>
-      <option name="isMechanized" value="false"/>
+      <option name="isAirTransportable" value="false"/>
+      <option name="isInfantry" value="false"/>
       <option name="artillerySupportable" value="true"/>
       <option name="attack" value="1"/>
       <option name="defense" value="2"/>
@@ -1659,7 +1659,7 @@
     </attachment>
     <!-- Bunker -->
     <attachment name="unitAttachment" attachTo="bunker" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
-      <option name="isTwoHit" value="true"/>
+      <option name="hitPoints" value="2"/>
       <option name="movement" value="0"/>
       <!--option name="isBunker" value="true"/-->
       <option name="attack" value="0"/>
@@ -1715,7 +1715,7 @@
       <option name="attack" value="4"/>
       <option name="defense" value="4"/>
       <option name="canBombard" value="true"/>
-      <option name="isTwoHit" value="true"/>
+      <option name="hitPoints" value="2"/>
     </attachment>
     <!-- Cruiser -->
     <attachment name="unitAttachment" attachTo="cruiser" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -1724,7 +1724,7 @@
       <option name="attack" value="3"/>
       <option name="defense" value="3"/>
       <option name="canBombard" value="true"/>
-      <option name="isTwoHit" value="false"/>
+      <option name="hitPoints" value="1"/>
     </attachment>
     <!-- Destroyer -->
     <attachment name="unitAttachment" attachTo="destroyer" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
@@ -1738,7 +1738,7 @@
     <!-- Super Carrier -->
     <attachment name="unitAttachment" attachTo="supercarrier" javaClass="games.strategy.triplea.attachments.UnitAttachment" type="unitType">
       <option name="carrierCapacity" value="3"/>
-      <option name="isTwoHit" value="true"/>
+      <option name="hitPoints" value="2"/>
       <option name="movement" value="2"/>
       <option name="isSea" value="true"/>
       <option name="attack" value="1"/>
@@ -1795,7 +1795,7 @@
     <attachment name="territoryAttachment" attachTo="Philippine" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="2"/>
       <option name="airBase" value="true"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Midway" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="0"/>
@@ -1803,7 +1803,7 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="Hawaiian Islands" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
       <option name="airBase" value="true"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Wake Island" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -1826,7 +1826,7 @@
       <option name="production" value="10"/>
       <option name="unitProduction" value="10"/>
       <option name="capital" value="Americans"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Central United States" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="6"/>
@@ -1837,7 +1837,7 @@
     <attachment name="territoryAttachment" attachTo="Western United States" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="10"/>
       <option name="unitProduction" value="10"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Mexico" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -1860,7 +1860,7 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="Kwangtung" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Burma" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -1876,7 +1876,7 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="India" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="3"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Trans-Jordan" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -1889,7 +1889,7 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="Cyrenaica" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="Italians"/>
+      <option name="originalOwner" value="Italians"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="African Free French" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -1933,7 +1933,7 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="Eastern Australia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="New Zealand" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -1948,7 +1948,7 @@
     <attachment name="territoryAttachment" attachTo="Great Britain" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="9"/>
       <option name="unitProduction" value="9"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
       <option name="capital" value="British"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Gibraltar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
@@ -1957,7 +1957,7 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="Eastern Canada" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="3"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Western Canada" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -1985,7 +1985,7 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="Tunisia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="East Prussia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -2020,7 +2020,7 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Poland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="2"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Denmark" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -2036,23 +2036,23 @@
       <option name="production" value="5"/>
       <option name="unitProduction" value="5"/>
       <option name="capital" value="Germans"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Netherlands-Belgium" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Northern France" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
       <option name="capital" value="FreeFrench"/>
       <option name="production" value="4"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Eritrea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="0"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="British Somaliland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="British"/>
+      <option name="originalOwner" value="British"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Italian Somaliland" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="0"/>
@@ -2078,23 +2078,23 @@
       <option name="production" value="6"/>
       <option name="unitProduction" value="6"/>
       <option name="capital" value="Italians"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="West Yugoslavia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="2"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Kiangsu" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="2"/>
-      <option name="occupiedTerrOf" value="Chinese"/>
-      <option name="victoryCity" value="true"/>
+      <option name="originalOwner" value="Chinese"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="French Indo-China" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="2"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Manchuria" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="3"/>
-      <option name="occupiedTerrOf" value="Chinese"/>
+      <option name="originalOwner" value="Chinese"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Caroline Islands" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="0"/>
@@ -2104,7 +2104,7 @@
       <option name="production" value="8"/>
       <option name="unitProduction" value="8"/>
       <option name="capital" value="Japanese"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Iwo Jima" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="0"/>
@@ -2136,13 +2136,13 @@
     <attachment name="territoryAttachment" attachTo="Caucasus" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="4"/>
       <option name="unitProduction" value="4"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Central Russia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="6"/>
       <option name="unitProduction" value="6"/>
       <option name="capital" value="Russians"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Komi" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -2189,7 +2189,7 @@
     <attachment name="territoryAttachment" attachTo="Karelia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="3"/>
       <option name="unitProduction" value="3"/>
-      <option name="victoryCity" value="true"/>
+      <option name="victoryCity" value="1"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Eastern Ukraine" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
@@ -2199,43 +2199,43 @@
     </attachment>
     <attachment name="territoryAttachment" attachTo="Syria" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Algeria" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Morocco" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Mauritania" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="French Sudan-Guinea" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Niger" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="0"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Dahomey-Upper Volta" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Cote D'Ivorie" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="0"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Madagascar" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="1"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Vichy France" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="2"/>
-      <option name="occupiedTerrOf" value="FreeFrench"/>
+      <option name="originalOwner" value="FreeFrench"/>
     </attachment>
     <attachment name="territoryAttachment" attachTo="Saudi Arabia" javaClass="games.strategy.triplea.attachments.TerritoryAttachment" type="territory">
       <option name="production" value="0"/>
@@ -3020,10 +3020,10 @@
     <property name="Kamikaze Airplanes" value="false" editable="true">
       <boolean/>
     </property>
-    <property name="Units repair at end of round" value="true" editable="true">
+    <property name="Units Repair Hits End Turn" value="true" editable="true">
       <boolean/>
     </property>
-    <property name="Units repair at beginning of round" value="false" editable="true">
+    <property name="Units Repair Hits Start Turn" value="false" editable="true">
       <boolean/>
     </property>
     <!-- END OF OPTIONAL PROPERTIES -->
